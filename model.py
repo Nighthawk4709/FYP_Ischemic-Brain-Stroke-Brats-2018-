@@ -3,11 +3,12 @@
 # by Myronenko A. (https://arxiv.org/pdf/1810.11654.pdf)
 # Author of this code: Suyog Jadhav (https://github.com/IAmSUyogJadhav)
 
+import tesorflow
 import keras.backend as K
 from keras.losses import mse
 from keras.layers import Conv3D, Activation, Add, UpSampling3D, Lambda, Dense
 from keras.layers import Input, Reshape, Flatten, Dropout, SpatialDropout3D
-from keras.optimizers import Adam
+from tensorflow.keras.optimizers import Adam
 from keras.models import Model
 try:
     from group_norm import GroupNormalization
